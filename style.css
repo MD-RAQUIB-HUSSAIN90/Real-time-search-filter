@@ -21,8 +21,10 @@ body {
 }
 
 input {
+    
   width: 220px;
   padding: 12px 18px;
+  
   border: none;
   outline: none;
   border-radius: 8px;
@@ -111,4 +113,12 @@ input {
 .card:hover {
   transform: translateY(-5px);
   transition: 0.3s;
+}
+
+.not-found{
+    color:white;
+    font-size:28px;
+    width:100%;
+    text-align:center;
+    margin-top:50px;
 }

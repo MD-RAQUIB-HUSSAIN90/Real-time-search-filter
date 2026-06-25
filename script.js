@@ -68,9 +68,15 @@ showUsers(users);
 inp.addEventListener("input", (e) => {
   const value = e.target.value.toLowerCase().trim();
 
-  const filteredUsers = users.filter(user =>
-    user.name.toLowerCase().startsWith(value)
-  );
+  const filteredUsers = users.filter((user) => {
+    return user.name.toLowerCase().startsWith(value);
+  });
 
-  showUsers(filteredUsers);
+  if (filteredUsers.length > 0) {
+    showUsers(filteredUsers);
+  } else {
+    cards.innerHTML = `
+      <h2 class="not-found">User Not Found 😔</h2>
+    `;
+  }
 });
