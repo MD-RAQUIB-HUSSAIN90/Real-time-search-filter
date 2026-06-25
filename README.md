@@ -1,7 +1,7 @@
 # User Search Cards UI
 
 
-<h3>LIVE DEMO :- </h3>
+<h3>LIVE DEMO :- https://md-raquib-hussain90.github.io/Real-time-search-filter/ </h3>
 A clean and responsive profile card search application built using **HTML**, **CSS**, and **Vanilla JavaScript**.
 
 Users are displayed as modern profile cards, and the search bar filters cards instantly while typing.
