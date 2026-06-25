@@ -10,7 +10,6 @@ body {
   background: #000;
   display: flex;
   justify-content: center;
-  /* align-items: center; */
   padding: 30px 15px;
 }
 
@@ -51,7 +50,7 @@ input {
   border-radius: 14px;
   flex-shrink: 0;
   cursor: pointer;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .card:hover {
@@ -71,25 +70,27 @@ input {
   background-position: center;
   filter: blur(15px);
   transform: scale(1.2);
-  opacity: .8;
+  opacity: 0.8;
 
-  mask-image: linear-gradient(to top,
-      rgba(0, 0, 0, 1),
-      rgba(0, 0, 0, 0));
+  mask-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 
-  -webkit-mask-image: linear-gradient(to top,
-      rgba(0, 0, 0, 1),
-      rgba(0, 0, 0, 0));
+  -webkit-mask-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0)
+  );
 }
 
 .card::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top,
-      rgba(0, 0, 0, .95),
-      rgba(0, 0, 0, .3),
-      transparent);
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.95),
+    rgba(0, 0, 0, 0.3),
+    transparent
+  );
   z-index: 2;
 }
 
@@ -111,7 +112,7 @@ input {
 .content p {
   font-size: 12px;
   line-height: 1.4;
-  color: rgba(255, 255, 255, .8);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .not-found {
@@ -125,7 +126,6 @@ input {
 /* ================= TABLET ================= */
 
 @media (max-width: 992px) {
-
   .cards {
     gap: 22px;
   }
@@ -147,7 +147,6 @@ input {
 /* ================= MOBILE ================= */
 
 @media (max-width: 600px) {
-
   body {
     padding: 20px 10px;
   }
@@ -193,7 +192,6 @@ input {
 /* ================= SMALL MOBILE ================= */
 
 @media (max-width: 400px) {
-
   .card {
     width: 125px;
     height: 200px;
