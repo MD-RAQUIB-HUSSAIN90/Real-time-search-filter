@@ -65,6 +65,8 @@ function showUsers(arr) {
 
 showUsers(users);
 
+// This is search input section 
+
 inp.addEventListener("input", (e) => {
   const value = e.target.value.toLowerCase().trim();
 
